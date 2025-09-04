@@ -1,9 +1,6 @@
 # car-selling-website
 a rensponsive car-selling website for our school web project
 
-## Giới thiệu đề tài
-Mục tiêu của nhóm chúng em là xây dựng một website front-end bán oto 
-
 ## Mô tả
 * Trang chủ (Home) : Bao gồm banner, navigation, các loại xe ( xe oto, moto), mục blog
 * Giới thiệu website (about) : thông tin về tổ chức và các chi nhánh hoạt động
@@ -14,6 +11,3 @@ Mục tiêu của nhóm chúng em là xây dựng một website front-end bán o
 * Chính sách bảo trì (maintenance) : giới thiệu các chính sách bảo trì
 * Liên hệ (contact) : form liên hệ
 
-
-## Website tham khảo:
-https://www.porsche.com
