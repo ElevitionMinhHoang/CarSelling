@@ -1,230 +1,324 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>AutoWorld</title>
-        <link rel="stylesheet" href="asset/css/homepage.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCars - Bứt Phá Mọi Giới Hạn</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
 
-    <body>
-        <header>
-            <div class="nav1 container1">
-                <i class='bx bx-menu' id="menu-icon"></i>
-                <!-- logo -->
-                 <a href="index.html" class="logo1">Auto<span>World </span></a>
-                 <!-- list -->
-                 <ul class="navbar1">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Porsche.html">Cars</a></li>
-                    <li><a href="motors.html">Motors</a></li>
-                    <li><a href="Payment.html">Payment</a></li>
-                    <li><a href="Maintenance.html">Maintenance</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                 </ul>
-                 <!-- search icon -->
-                  <i class="bx bx-search" id="search-icon"></i>
-                 <!-- search box -->
-                  <div class="search-box container1">
-                    <input type="search" placeholder="Search here...">
-                  </div>
-            </div>
-        </header>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">NovaCars</a>
 
-        <!--Home-->
-        <section class="home" id="home">
-            <div class="home-text">
-                <h1>We have everything<br>You Need About</h1>
-                <h1><span> Cars</span> And<span> Motors</span> </h1>
-                <p>Can do according to customer's demand.</p>
-                <!-- Home button -->
-                <a href="Porsche.html" class="btn">Discover Now</a>
-            </div>
-        </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Trang chủ</a></li>
+                    <li class="nav__item"><a href="#cars" class="nav__link">Dòng xe</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Dịch vụ</a></li>
+                    <li class="nav__item"><a href="#tech" class="nav__link">Công nghệ</a></li>
+                    <li class="nav__item"><a href="#promo" class="nav__link">Khuyến mãi</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Liên hệ</a></li>
+                </ul>
 
-        <!--Cars Section-->
-        <section class="cars" id="cars">
-            <div class="heading">
-                <span>All Cars</span>
-                <h2>We have all types cars</h2>
-                <p>We analyze price changes, sales history and days on the market so you get the best deal.</p>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
             </div>
-            <!--Cars Container-->
-            <div class="cars-container container">
-                <!--Box 1-->
-                <div class="box">
-                    <img src="asset/img/homepage/car1.jpg">
-                    <a href="Porsche.html" id="box-a"><h2>Porsche </h2></a>
-                </div>
-                <!--Box 2-->
-                <div class="box">
-                    <img src="asset/img/homepage/car2.jpg">
-                    <h2>Audi</h2>
-                </div>
-                <!--Box 3-->
-                <div class="box">
-                    <img src="asset/img/homepage/car3.jpg">
-                    <h2>Mercedes</h2>
-                </div>
-                <!--Box 4-->
-                <div class="box">
-                    <img src="asset/img/homepage/car4.jpg">
-                    <h2>Ford</h2>
-                </div>
-                <!--Box 5-->
-                <div class="box">
-                    <img src="asset/img/homepage/car5.jpg">
-                    <h2>BMW</h2>
-                </div>
-                <!--Box 6-->
-                <div class="box">
-                    <img src="asset/img/homepage/car6.jpg">
-                    <h2>Ferrari</h2>
+
+            <!-- Toggle button for mobile -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__data">
+                    <h1 class="hero__title">Bứt phá mọi giới hạn cùng NovaCars</h1>
+                    <p class="hero__description">Trải nghiệm sự sang trọng, công nghệ đỉnh cao và hiệu suất vượt trội. Tương lai của sự di chuyển bắt đầu từ đây.</p>
+                    <div class="hero__buttons">
+                        <a href="#cars" class="button">Khám phá ngay</a>
+                        <a href="#contact" class="button button--ghost">Đăng ký lái thử</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--About-->
-        <section class="about container" id="about">
-            <div class="about-img">
-                <img src="asset/img/homepage/about.png">
-            </div>
-            <div class="about-text">
-                <span>Payment Method</span>
-                <h2>Cheap Prices With <br>Quality Cars</h2>
-                <p>Payment is the transfer of money or goods and services in exchange for a product or service.</p>
-                <!--About Button-->
-                <a href="Payment.html" class="btn">Learn More</a>
-            </div>
-        </section>
+        <!-- Car Showcase Section -->
+        <section class="cars section" id="cars">
+            <h2 class="section__title">Dòng Xe Nổi Bật</h2>
 
-        <!--Parts Section-->
-        <section class="parts" id="parts">
-            <div class="heading">
-                <span>What we Offer</span>
-                <h2>Not only cars but also motorcycles</h2>
-                <p style="max-width: 1068px;margin: auto">We have a lot of motorcycles belonging to famous companies from UK, USA and Japan. Our motorcycles impress with trendy, youthful, dynamic designs and constantly update modern features to optimize.</p>
+            <div class="cars__filter container">
+                <button class="filter__item active-filter" data-filter="all">Tất cả</button>
+                <button class="filter__item" data-filter="sedan">Sedan</button>
+                <button class="filter__item" data-filter="suv">SUV</button>
+                <button class="filter__item" data-filter="electric">Xe điện</button>
+                <button class="filter__item" data-filter="sport">Thể thao</button>
             </div>
-            <!--Parts Container-->
-            <section class="cars">
-                <!--Cars Container-->
-                <div class="cars-container container">
-                    <!--Box 1-->
-                    <div class="box">
-                        <img src="asset/img/homepage/part.jpg">
-                        <h2>Yamaha</h2>
-                    </div>
-                    <!--Box 2-->
-                    <div class="box">
-                        <img src="asset/img/homepage/part2.jpg">
-                        <h2>Kawasaki</h2>
-                    </div>
-                    <!--Box 3-->
-                    <div class="box">
-                        <img src="asset/img/homepage/part3.png">
-                        <h2>YZF-R6</h2>
-                    </div>
-                    <!--Box 4-->
-                    <div class="box">
-                        <img src="asset/img/homepage/part4.png">
-                        <h2>Triumph</h2>
-                    </div>
-                    <!--Box 5-->
-                    <div class="box">
-                        <img src="asset/img/homepage/HARLEY.png">
-                        <h2>Harley</h2>
-                    </div>
-                    <!--Box 6-->
-                    <div class="box">
-                        <img src="asset/img/homepage/HONDA.jpg">
-                        <h2>Honda</h2>
-                    </div>
-                </div>
-            </section>
-        </section>
 
-        <!--Blog-->
-        <section class="blog" id="blog">
-            <div class="heading">
-                <span>Blog & News</span>
-                <h2>Our Blog content</h2>
-                <p>Stay informed with our expert, in-depth car reviews and breaking auto news.</p>
-            </div>
-            <!--Blog Container-->
-            <div class="blog-container container">
-                <!--Box 1-->
-                <div class="box">
-                    <div>
-                    <img src="asset/img/homepage/car1.jpg">
-                    </div>
-                    <span>Feb 14 2021</span>
-                    <h3>Lucid recalls Air sedans for potential motor shutdown</h3>
-                    <p>273 model year 2022 and 2023 Air vehicles because of the possibility that the electrically activated.</p>
-                    <a href="https://www.tesla.com/model3" class="blog-btn">Read More<i class='bx bx-right-arrow-alt' ></i></a>
+            <div class="cars__container container grid">
+                <!-- Car Card 1 -->
+                <div class="car__card" data-category="sedan">
+                    <div class="car__tag">Mới</div>
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Sedan" alt="Sedan" class="car__img">
+                    <h3 class="car__title">Nova Sedan S-Class</h3>
+                    <p class="car__price">Từ 1.2 Tỷ VNĐ</p>
+                    <button class="button car__button">Chi tiết</button>
                 </div>
-                <!--Box 2-->
-                <div class="box">
-                    <img src="asset/img/homepage/car2.jpg">
-                    <span>Feb 14 2021</span>
-                    <h3>How To Get Perfect Car At Low Price</h3>
-                    <p>There are also oftentimes multiple different payment options and financing choices.</p>
-                    <a href="https://www.volvocars.com/en-vn/cars/xc90/" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+                <!-- Car Card 2 -->
+                <div class="car__card" data-category="suv">
+                    <div class="car__tag car__tag--hybrid">Hybrid</div>
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+SUV" alt="SUV" class="car__img">
+                    <h3 class="car__title">Nova SUV X-Plorer</h3>
+                    <p class="car__price">Từ 1.8 Tỷ VNĐ</p>
+                    <button class="button car__button">Chi tiết</button>
                 </div>
-                <!--Box 3-->
-                <div class="box">
-                    <img src="asset/img/homepage/blog3.webp">
-                    <span>Feb 14 2021</span>
-                    <h3>The 2023 Ford Bronco Raptor costs more, too</h3>
-                    <p>If you're lusting for a badass ride that offers extreme levels of off-road performance.</p>
-                    <a href="https://www.mercedes-benzworld.co.uk/discover/" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+                <!-- Car Card 3 -->
+                <div class="car__card" data-category="electric">
+                    <div class="car__tag car__tag--sale">Giảm 5%</div>
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+EV" alt="Electric Car" class="car__img">
+                    <h3 class="car__title">Nova EV-Tron</h3>
+                    <p class="car__price">Từ 2.1 Tỷ VNĐ</p>
+                    <button class="button car__button">Chi tiết</button>
+                </div>
+                <!-- Car Card 4 -->
+                <div class="car__card" data-category="sport">
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Sport" alt="Sports Car" class="car__img">
+                    <h3 class="car__title">Nova Sport GT</h3>
+                    <p class="car__price">Từ 3.5 Tỷ VNĐ</p>
+                    <button class="button car__button">Chi tiết</button>
+                </div>
+                 <!-- Car Card 5 -->
+                <div class="car__card" data-category="sedan">
+                    <div class="car__tag">Mới</div>
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Hatchback" alt="Hatchback" class="car__img">
+                    <h3 class="car__title">Nova Hatchback Z-Line</h3>
+                    <p class="car__price">Từ 890 Triệu VNĐ</p>
+                    <button class="button car__button">Chi tiết</button>
+                </div>
+                <!-- Car Card 6 -->
+                <div class="car__card" data-category="suv">
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Pickup" alt="Pickup Truck" class="car__img">
+                    <h3 class="car__title">Nova Pickup Titan</h3>
+                    <p class="car__price">Từ 950 Triệu VNĐ</p>
+                    <button class="button car__button">Chi tiết</button>
                 </div>
             </div>
         </section>
 
-        <footer class="footer">
-            <div class="footer-container container1">
-                <div class="footer-box">
-                    <a href="index.html" class="logo1">Auto<span>World</span></a>
-                    <div class="social">
-                        <a href=""><i class='bx bxl-facebook' ></i></a>
-                        <a href=""><i class='bx bxl-twitter' ></i></a>
-                        <a href=""><i class='bx bxl-instagram' ></i></a>
-                        <a href=""><i class='bx bxl-youtube' ></i></a>
-                    </div>
+        <!-- Loan Calculator Section -->
+        <section class="loan section" id="loan">
+            <div class="loan__container container grid">
+                <div class="loan__data">
+                    <h2 class="section__title">Dự Toán Chi Phí Lăn Bánh</h2>
+                    <form action="#" class="loan__form" id="loan-form">
+                        <div class="form__group">
+                            <label for="car-price" class="form__label">Giá trị xe (VNĐ)</label>
+                            <input type="number" id="car-price" placeholder="Nhập giá trị xe" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="down-payment" class="form__label">Trả trước (%)</label>
+                            <input type="number" id="down-payment" placeholder="VD: 20" value="20" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="loan-term" class="form__label">Kỳ hạn vay (năm)</label>
+                            <input type="number" id="loan-term" placeholder="VD: 5" value="5" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="interest-rate" class="form__label">Lãi suất (%/năm)</label>
+                            <input type="number" id="interest-rate" placeholder="VD: 8.5" value="8.5" class="form__input">
+                        </div>
+                        <button type="submit" class="button form__button">Tính toán</button>
+                    </form>
                 </div>
-                <div class="footer-box">
-                    <h3>Page</h3>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="Porsche.html">Cars</a>
-                    <a href="motors.html">Motors</a>
-                </div>
-                <div class="footer-box">
-                    <h3>Legal</h3>
-                    <a href="">Privacy</a>
-                    <a href="">Refund Policy</a>
-                    <a href="">Cookie Policy</a>
-                </div>
-                <div class="footer-box">
-                    <h3>Contact</h3>
-                    <p>United States</p>
-                    <p>Japan</p>
-                    <p>Germany</p>
-                </div>
-                <div class="footer-box">
-                    <h3>Address</h3>
-                    <p>Showroom: No 2 Ton That Thuyet, My Dinh, Ha Noi</p>
-                    <div style="width:200px;height:50px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1110271992316!2d105.77816267431734!3d21.02824308062098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b2de700001%3A0xce7671b253d40386!2zU8O0zIEgMiBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIE5hbSBU4burIExpw6ptLCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2sus!4v1735121426650!5m2!1svi!2sus" 
-                        width="300" height="50" style="border:0;" allowfullscreen="" frameborder="0"></iframe>
+                <div class="loan__results">
+                    <h3 class="results__title">Kết Quả Ước Tính</h3>
+                    <div class="results__box">
+                        <div class="result__item">
+                            <span>Số tiền trả trước:</span>
+                            <span id="result-down-payment">0 VNĐ</span>
+                        </div>
+                        <div class="result__item">
+                            <span>Số tiền vay:</span>
+                            <span id="result-loan-amount">0 VNĐ</span>
+                        </div>
+                        <div class="result__item">
+                            <span>Góp hàng tháng:</span>
+                            <strong id="result-monthly-payment">0 VNĐ</strong>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
 
-   
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <h2 class="section__title">Dịch Vụ Đẳng Cấp</h2>
+            <div class="services__container container grid">
+                <!-- Service 1 -->
+                <div class="service__item">
+                    <i class='bx bx-calendar-check service__icon'></i>
+                    <h3 class="service__title">Đặt Lịch Bảo Dưỡng Online</h3>
+                    <p class="service__description">Nhanh chóng, tiện lợi và chủ động thời gian chăm sóc xế yêu của bạn.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service__item">
+                    <i class='bx bx-money-withdraw service__icon'></i>
+                    <h3 class="service__title">Tư Vấn Tài Chính & Trả Góp</h3>
+                    <p class="service__description">Giải pháp tài chính linh hoạt, lãi suất ưu đãi giúp bạn sở hữu xe dễ dàng.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service__item">
+                    <i class='bx bxs-car-wash service__icon'></i>
+                    <h3 class="service__title">Chăm Sóc Nội Thất Cao Cấp</h3>
+                    <p class="service__description">Gói dịch vụ vệ sinh, làm mới nội thất bằng vật liệu chuyên dụng.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service__item">
+                    <i class='bx bx-headphone service__icon'></i>
+                    <h3 class="service__title">Cứu Hộ 24/7 Toàn Quốc</h3>
+                    <p class="service__description">An tâm trên mọi nẻo đường với đội ngũ cứu hộ chuyên nghiệp, sẵn sàng hỗ trợ.</p>
+                </div>
+            </div>
+        </section>
 
-        <script src="asset/js/main.js"></script>
-    </body>
+        <!-- Technology & Safety Section -->
+        <section class="tech section" id="tech">
+            <h2 class="section__title">Công Nghệ & An Toàn Vượt Trội</h2>
+            <div class="tech__container container grid">
+                <div class="tech__image-content">
+                    <img src="https://via.placeholder.com/500x400.png/0a2a43/ffffff?text=AI+Safety" alt="Công nghệ an toàn AI" class="tech__img">
+                </div>
+                <div class="tech__data">
+                    <div class="tech__item">
+                        <i class='bx bxs-shield-check tech__icon'></i>
+                        <div>
+                            <h3 class="tech__title">Nova AI Safety Shield</h3>
+                            <p class="tech__description">Hệ thống an toàn chủ động ứng dụng AI, cảnh báo va chạm và tự động phanh khẩn cấp.</p>
+                        </div>
+                    </div>
+                    <div class="tech__item">
+                        <i class='bx bxs-car-mechanic tech__icon'></i>
+                        <div>
+                            <h3 class="tech__title">Hỗ Trợ Đỗ Xe Tự Động</h3>
+                            <p class="tech__description">Tự động tìm kiếm không gian và thực hiện thao tác đỗ xe song song hoặc vuông góc.</p>
+                        </div>
+                    </div>
+                    <div class="tech__item">
+                        <i class='bx bxs-map-alt tech__icon'></i>
+                        <div>
+                            <h3 class="tech__title">Chế Độ Lái Bán Tự Động</h3>
+                            <p class="tech__description">Giữ làn đường, kiểm soát hành trình thích ứng và tự động điều chỉnh tốc độ an toàn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Promotions Section -->
+        <section class="promo section" id="promo">
+            <h2 class="section__title">Tin Tức & Khuyến Mãi</h2>
+            <div class="promo__container container grid">
+                <!-- Promo Card 1 -->
+                <div class="promo__card">
+                    <img src="https://via.placeholder.com/400x300.png/f08c00/ffffff?text=Ra+Mắt+Xe+Mới" alt="Ra mắt xe mới" class="promo__img">
+                    <div class="promo__content">
+                        <h3 class="promo__title">Sự kiện ra mắt Nova EV-Tron thế hệ mới</h3>
+                        <p class="promo__description">Khám phá mẫu xe điện tương lai với thiết kế đột phá và hiệu năng ấn tượng.</p>
+                        <a href="#" class="promo__link">Đọc thêm <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="promo__card">
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Ưu+Đãi+Tháng+11" alt="Ưu đãi" class="promo__img">
+                    <div class="promo__content">
+                        <h3 class="promo__title">Ưu đãi đặc biệt tháng 11 cho dòng SUV</h3>
+                        <p class="promo__description">Nhận ngay gói phụ kiện cao cấp và hỗ trợ 50% phí trước bạ khi mua Nova SUV.</p>
+                        <a href="#" class="promo__link">Đọc thêm <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                 <!-- Promo Card 3 -->
+                <div class="promo__card">
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Lái+Thử+Xe" alt="Lái thử xe" class="promo__img">
+                    <div class="promo__content">
+                        <h3 class="promo__title">Đăng ký lái thử toàn quốc cuối tuần này</h3>
+                        <p class="promo__description">Trải nghiệm trực tiếp các dòng xe mới nhất của NovaCars tại hệ thống showroom.</p>
+                        <a href="#" class="promo__link">Đọc thêm <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Liên Hệ Với Chúng Tôi</h2>
+            <div class="contact__container container grid">
+                <form action="#" class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <input type="text" id="name" placeholder="Họ và tên" class="form__input">
+                        <p class="form__error-message"></p>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="email" placeholder="Email" class="form__input">
+                        <p class="form__error-message"></p>
+                    </div>
+                    <div class="form__group form__group--full">
+                        <textarea id="message" placeholder="Nội dung cần tư vấn" class="form__input"></textarea>
+                        <p class="form__error-message"></p>
+                    </div>
+                    <button type="submit" class="button">Gửi Đăng Ký</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">NovaCars</a>
+                    <p class="footer__description">Mang đến những sản phẩm chất lượng và trải nghiệm vượt trội.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social-link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social-link"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h3 class="footer__title">Về NovaCars</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Câu chuyện</a></li>
+                        <li><a href="#" class="footer__link">Sự nghiệp</a></li>
+                        <li><a href="#" class="footer__link">Tin tức</a></li>
+                    </ul>
+                </div>
+                 <div class="footer__links">
+                    <h3 class="footer__title">Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="footer__link">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="footer__link">Điều khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="footer__copy">&#169; NovaCars. All rights reserved</span>
+        </div>
+    </footer>
+
+    <script src="asset/js/script.js"></script>
+</body>
 </html>
