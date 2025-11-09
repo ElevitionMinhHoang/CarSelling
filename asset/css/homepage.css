@@ -1,0 +1,97 @@
+/*=============== HERO ===============*/
+.hero {
+  background: linear-gradient(160deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=1974&auto=format&fit=crop') no-repeat center center/cover;
+  padding: 8rem 0 4rem;
+}
+
+.hero__container {
+  text-align: center;
+}
+
+.hero__title {
+  font-size: var(--biggest-font-size);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero__description {
+  font-size: var(--h3-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease-out .5s;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  animation: fadeInUp 1s ease-out 1s;
+}
+
+/* Keyframes for hero animations */
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/*=============== NEWS & PROMOTIONS ===============*/
+.promo__container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.promo__card {
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all .4s ease;
+}
+
+.promo__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.promo__card:hover .promo__img {
+    transform: scale(1.05);
+}
+
+.promo__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.promo__content {
+    padding: 1.5rem;
+}
+
+.promo__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: .5rem;
+}
+
+.promo__description {
+    font-size: var(--small-font-size);
+    margin-bottom: 1rem;
+    color: #6b7280;
+}
+
+.promo__link {
+    color: var(--secondary-color);
+    font-weight: var(--font-medium);
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.promo__link i {
+    transition: transform .3s;
+}
+
+.promo__link:hover i {
+    transform: translateX(4px);
+}

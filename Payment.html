@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - NovaCars</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/payment.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">NovaCars</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Trang chủ</a></li>
+                    <li class="nav__item"><a href="motors.html" class="nav__link">Dòng xe</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Dịch vụ</a></li>
+                    <li class="nav__item"><a href="about.html#tech" class="nav__link">Công nghệ</a></li>
+                    <li class="nav__item"><a href="index.html#promo" class="nav__link">Khuyến mãi</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Liên hệ</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <!-- Toggle button for mobile -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Loan Calculator Section -->
+        <section class="loan section" id="loan">
+            <div class="loan__container container grid">
+                <div class="loan__data">
+                    <h2 class="section__title">Dự Toán Chi Phí Lăn Bánh</h2>
+                    <form action="#" class="loan__form" id="loan-form">
+                        <div class="form__group">
+                            <label for="car-price" class="form__label">Giá trị xe (VNĐ)</label>
+                            <input type="number" id="car-price" placeholder="Nhập giá trị xe" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="down-payment" class="form__label">Trả trước (%)</label>
+                            <input type="number" id="down-payment" placeholder="VD: 20" value="20" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="loan-term" class="form__label">Kỳ hạn vay (năm)</label>
+                            <input type="number" id="loan-term" placeholder="VD: 5" value="5" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="interest-rate" class="form__label">Lãi suất (%/năm)</label>
+                            <input type="number" id="interest-rate" placeholder="VD: 8.5" value="8.5" class="form__input">
+                        </div>
+                        <button type="submit" class="button form__button">Tính toán</button>
+                    </form>
+                </div>
+                <div class="loan__results">
+                    <h3 class="results__title">Kết Quả Ước Tính</h3>
+                    <div class="results__box">
+                        <div class="result__item">
+                            <span>Số tiền trả trước:</span>
+                            <span id="result-down-payment">0 VNĐ</span>
+                        </div>
+                        <div class="result__item">
+                            <span>Số tiền vay:</span>
+                            <span id="result-loan-amount">0 VNĐ</span>
+                        </div>
+                        <div class="result__item">
+                            <span>Góp hàng tháng:</span>
+                            <strong id="result-monthly-payment">0 VNĐ</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">NovaCars</a>
+                    <p class="footer__description">Mang đến những sản phẩm chất lượng và trải nghiệm vượt trội.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social-link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social-link"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h3 class="footer__title">Về NovaCars</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Câu chuyện</a></li>
+                        <li><a href="#" class="footer__link">Sự nghiệp</a></li>
+                        <li><a href="#" class="footer__link">Tin tức</a></li>
+                    </ul>
+                </div>
+                 <div class="footer__links">
+                    <h3 class="footer__title">Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="footer__link">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="footer__link">Điều khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="footer__copy">&#169; NovaCars. All rights reserved</span>
+        </div>
+    </footer>
+
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/payment.js"></script>
+</body>
+</html>

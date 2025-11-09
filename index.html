@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaCars - Bứt Phá Mọi Giới Hạn</title>
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/homepage.css">
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +22,12 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Trang chủ</a></li>
-                    <li class="nav__item"><a href="#cars" class="nav__link">Dòng xe</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Dịch vụ</a></li>
-                    <li class="nav__item"><a href="#tech" class="nav__link">Công nghệ</a></li>
-                    <li class="nav__item"><a href="#promo" class="nav__link">Khuyến mãi</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Liên hệ</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Trang chủ</a></li>
+                    <li class="nav__item"><a href="motors.html" class="nav__link">Dòng xe</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Dịch vụ</a></li>
+                    <li class="nav__item"><a href="about.html#tech" class="nav__link">Công nghệ</a></li>
+                    <li class="nav__item"><a href="index.html#promo" class="nav__link">Khuyến mãi</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Liên hệ</a></li>
                 </ul>
 
                 <div class="nav__close" id="nav-close">
@@ -51,177 +52,6 @@
                     <div class="hero__buttons">
                         <a href="#cars" class="button">Khám phá ngay</a>
                         <a href="#contact" class="button button--ghost">Đăng ký lái thử</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Car Showcase Section -->
-        <section class="cars section" id="cars">
-            <h2 class="section__title">Dòng Xe Nổi Bật</h2>
-
-            <div class="cars__filter container">
-                <button class="filter__item active-filter" data-filter="all">Tất cả</button>
-                <button class="filter__item" data-filter="sedan">Sedan</button>
-                <button class="filter__item" data-filter="suv">SUV</button>
-                <button class="filter__item" data-filter="electric">Xe điện</button>
-                <button class="filter__item" data-filter="sport">Thể thao</button>
-            </div>
-
-            <div class="cars__container container grid">
-                <!-- Car Card 1 -->
-                <div class="car__card" data-category="sedan">
-                    <div class="car__tag">Mới</div>
-                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Sedan" alt="Sedan" class="car__img">
-                    <h3 class="car__title">Nova Sedan S-Class</h3>
-                    <p class="car__price">Từ 1.2 Tỷ VNĐ</p>
-                    <button class="button car__button">Chi tiết</button>
-                </div>
-                <!-- Car Card 2 -->
-                <div class="car__card" data-category="suv">
-                    <div class="car__tag car__tag--hybrid">Hybrid</div>
-                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+SUV" alt="SUV" class="car__img">
-                    <h3 class="car__title">Nova SUV X-Plorer</h3>
-                    <p class="car__price">Từ 1.8 Tỷ VNĐ</p>
-                    <button class="button car__button">Chi tiết</button>
-                </div>
-                <!-- Car Card 3 -->
-                <div class="car__card" data-category="electric">
-                    <div class="car__tag car__tag--sale">Giảm 5%</div>
-                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+EV" alt="Electric Car" class="car__img">
-                    <h3 class="car__title">Nova EV-Tron</h3>
-                    <p class="car__price">Từ 2.1 Tỷ VNĐ</p>
-                    <button class="button car__button">Chi tiết</button>
-                </div>
-                <!-- Car Card 4 -->
-                <div class="car__card" data-category="sport">
-                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Sport" alt="Sports Car" class="car__img">
-                    <h3 class="car__title">Nova Sport GT</h3>
-                    <p class="car__price">Từ 3.5 Tỷ VNĐ</p>
-                    <button class="button car__button">Chi tiết</button>
-                </div>
-                 <!-- Car Card 5 -->
-                <div class="car__card" data-category="sedan">
-                    <div class="car__tag">Mới</div>
-                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Hatchback" alt="Hatchback" class="car__img">
-                    <h3 class="car__title">Nova Hatchback Z-Line</h3>
-                    <p class="car__price">Từ 890 Triệu VNĐ</p>
-                    <button class="button car__button">Chi tiết</button>
-                </div>
-                <!-- Car Card 6 -->
-                <div class="car__card" data-category="suv">
-                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Pickup" alt="Pickup Truck" class="car__img">
-                    <h3 class="car__title">Nova Pickup Titan</h3>
-                    <p class="car__price">Từ 950 Triệu VNĐ</p>
-                    <button class="button car__button">Chi tiết</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Loan Calculator Section -->
-        <section class="loan section" id="loan">
-            <div class="loan__container container grid">
-                <div class="loan__data">
-                    <h2 class="section__title">Dự Toán Chi Phí Lăn Bánh</h2>
-                    <form action="#" class="loan__form" id="loan-form">
-                        <div class="form__group">
-                            <label for="car-price" class="form__label">Giá trị xe (VNĐ)</label>
-                            <input type="number" id="car-price" placeholder="Nhập giá trị xe" class="form__input">
-                        </div>
-                        <div class="form__group">
-                            <label for="down-payment" class="form__label">Trả trước (%)</label>
-                            <input type="number" id="down-payment" placeholder="VD: 20" value="20" class="form__input">
-                        </div>
-                        <div class="form__group">
-                            <label for="loan-term" class="form__label">Kỳ hạn vay (năm)</label>
-                            <input type="number" id="loan-term" placeholder="VD: 5" value="5" class="form__input">
-                        </div>
-                        <div class="form__group">
-                            <label for="interest-rate" class="form__label">Lãi suất (%/năm)</label>
-                            <input type="number" id="interest-rate" placeholder="VD: 8.5" value="8.5" class="form__input">
-                        </div>
-                        <button type="submit" class="button form__button">Tính toán</button>
-                    </form>
-                </div>
-                <div class="loan__results">
-                    <h3 class="results__title">Kết Quả Ước Tính</h3>
-                    <div class="results__box">
-                        <div class="result__item">
-                            <span>Số tiền trả trước:</span>
-                            <span id="result-down-payment">0 VNĐ</span>
-                        </div>
-                        <div class="result__item">
-                            <span>Số tiền vay:</span>
-                            <span id="result-loan-amount">0 VNĐ</span>
-                        </div>
-                        <div class="result__item">
-                            <span>Góp hàng tháng:</span>
-                            <strong id="result-monthly-payment">0 VNĐ</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="services section" id="services">
-            <h2 class="section__title">Dịch Vụ Đẳng Cấp</h2>
-            <div class="services__container container grid">
-                <!-- Service 1 -->
-                <div class="service__item">
-                    <i class='bx bx-calendar-check service__icon'></i>
-                    <h3 class="service__title">Đặt Lịch Bảo Dưỡng Online</h3>
-                    <p class="service__description">Nhanh chóng, tiện lợi và chủ động thời gian chăm sóc xế yêu của bạn.</p>
-                </div>
-                <!-- Service 2 -->
-                <div class="service__item">
-                    <i class='bx bx-money-withdraw service__icon'></i>
-                    <h3 class="service__title">Tư Vấn Tài Chính & Trả Góp</h3>
-                    <p class="service__description">Giải pháp tài chính linh hoạt, lãi suất ưu đãi giúp bạn sở hữu xe dễ dàng.</p>
-                </div>
-                <!-- Service 3 -->
-                <div class="service__item">
-                    <i class='bx bxs-car-wash service__icon'></i>
-                    <h3 class="service__title">Chăm Sóc Nội Thất Cao Cấp</h3>
-                    <p class="service__description">Gói dịch vụ vệ sinh, làm mới nội thất bằng vật liệu chuyên dụng.</p>
-                </div>
-                <!-- Service 4 -->
-                <div class="service__item">
-                    <i class='bx bx-headphone service__icon'></i>
-                    <h3 class="service__title">Cứu Hộ 24/7 Toàn Quốc</h3>
-                    <p class="service__description">An tâm trên mọi nẻo đường với đội ngũ cứu hộ chuyên nghiệp, sẵn sàng hỗ trợ.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technology & Safety Section -->
-        <section class="tech section" id="tech">
-            <h2 class="section__title">Công Nghệ & An Toàn Vượt Trội</h2>
-            <div class="tech__container container grid">
-                <div class="tech__image-content">
-                    <img src="https://via.placeholder.com/500x400.png/0a2a43/ffffff?text=AI+Safety" alt="Công nghệ an toàn AI" class="tech__img">
-                </div>
-                <div class="tech__data">
-                    <div class="tech__item">
-                        <i class='bx bxs-shield-check tech__icon'></i>
-                        <div>
-                            <h3 class="tech__title">Nova AI Safety Shield</h3>
-                            <p class="tech__description">Hệ thống an toàn chủ động ứng dụng AI, cảnh báo va chạm và tự động phanh khẩn cấp.</p>
-                        </div>
-                    </div>
-                    <div class="tech__item">
-                        <i class='bx bxs-car-mechanic tech__icon'></i>
-                        <div>
-                            <h3 class="tech__title">Hỗ Trợ Đỗ Xe Tự Động</h3>
-                            <p class="tech__description">Tự động tìm kiếm không gian và thực hiện thao tác đỗ xe song song hoặc vuông góc.</p>
-                        </div>
-                    </div>
-                    <div class="tech__item">
-                        <i class='bx bxs-map-alt tech__icon'></i>
-                        <div>
-                            <h3 class="tech__title">Chế Độ Lái Bán Tự Động</h3>
-                            <p class="tech__description">Giữ làn đường, kiểm soát hành trình thích ứng và tự động điều chỉnh tốc độ an toàn.</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -258,28 +88,6 @@
                         <a href="#" class="promo__link">Đọc thêm <i class='bx bx-right-arrow-alt'></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Liên Hệ Với Chúng Tôi</h2>
-            <div class="contact__container container grid">
-                <form action="#" class="contact__form" id="contact-form">
-                    <div class="form__group">
-                        <input type="text" id="name" placeholder="Họ và tên" class="form__input">
-                        <p class="form__error-message"></p>
-                    </div>
-                    <div class="form__group">
-                        <input type="email" id="email" placeholder="Email" class="form__input">
-                        <p class="form__error-message"></p>
-                    </div>
-                    <div class="form__group form__group--full">
-                        <textarea id="message" placeholder="Nội dung cần tư vấn" class="form__input"></textarea>
-                        <p class="form__error-message"></p>
-                    </div>
-                    <button type="submit" class="button">Gửi Đăng Ký</button>
-                </form>
             </div>
         </section>
 
