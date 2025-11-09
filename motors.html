@@ -1,272 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Porsche</title>
-  <link rel="stylesheet" href="asset/css/Porsche.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dòng xe - NovaCars</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/motors.css">
 </head>
-
 <body>
-  <!--Navbar-->
-  <header>
-    <!--Nav container-->
-    <div class="nav container">
-      <!--Menu icon-->
-      <i class='bx bx-menu' id="menu-icon"></i>
-      <!--logo-->
-      <a href="#" class="logo"> Auto<span>World</span></a>
-      <!--Nav list-->
-      <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="Porsche.html">Cars</a></li>
-        <li><a href="motors.html" class="active">Motors</a></li>
-        <li><a href="Payment.html">Payment</a></li>
-        <li><a href="Maintenance.html">Maintenance</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <!--Search icon-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">NovaCars</a>
 
-    </div>
-  </header>
-  <!-- HOME -->
-  <section class="home" id="home">
-    <div class="home-text">
-      <h1>We have everything<br>You Need About</h1>
-      <h1><span> Cars</span> And<span> Motorcylcles</span> </h1>
-    </div>
-  </section>
-  <!--Cars Section-->
-  <section class="cars" id="cars" id="filter">
-    <div class="heading">
-      <span>What we offer</span>
-      <h2>Our Motor Is Always Excellent</h2>
-      <p>Your satisfaction is our pleasure</p>
-    </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Trang chủ</a></li>
+                    <li class="nav__item"><a href="motors.html" class="nav__link active-link">Dòng xe</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Dịch vụ</a></li>
+                    <li class="nav__item"><a href="about.html#tech" class="nav__link">Công nghệ</a></li>
+                    <li class="nav__item"><a href="index.html#promo" class="nav__link">Khuyến mãi</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Liên hệ</a></li>
+                </ul>
 
-    <div class="navbar1 container" id="filter_button">
-      <ul class="navbar1" id="navbar">
-        <li><a class="tab-item active" data-filter="all">All</a></li>
-        <li><a class="tab-item" data-filter="Yamaha">Yamaha</a></li>
-        <li><a class="tab-item" data-filter="Ducati">Ducati</a></li>
-        <li><a class="tab-item" data-filter="Kawasaki">Kawasaki</a></li>
-        <li><a class="tab-item" data-filter="ford">Triumph</a></li>
-        <li><a class="tab-item" data-filter="bmw">Harley</a></li>
-        <li><a class="tab-item" data-filter="ferrari">Honda</a></li>
-      </ul>
-        <input class="input-elevated" type="search" placeholder="Search here..." id="search-item" autocomplete="off">
-    </div>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
 
-    <!--    <div class="cars-container container element_porsche" id="displayElement">-->
-    <!--    Cars Container-->
-    <div class="cars-container container" id="filter-data">
-      <!--        Box1-->
-      <div class="box element_all" data-item="Yamaha">
-        <div class="info">
-          <h3 class="name_item">XS155R</h3>
-          <img src="asset/img/motors/mt1.jpg" alt="">
-          <span>$219.991</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(3k5
-            Reviews)</i>
-          <a href="Payment.html" class="btn">Contact</a>
-          <a target="_blank" href="PDetail.html" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box2-->
-      <div class="box element_all" data-item="Yamaha">
-        <div class="info">
-          <h3 class="name_item">MT-03</h3>
-          <img src="asset/img/motors/mt2.jpg" alt="">
-          <span>$307.108</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-              class='bx bxs-star'></i>(35k Reviews)</i>
-          <a href="Payment.html" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box3-->
-      <div class="box element_all" data-item="Yamaha">
-        <div class="info">
-          <h3 class="name_item">MT-15</h3>
-          <img src="asset/img/motors/mt3.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="contact.html" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box4-->
-      <div class="box element_all" data-item="Yamaha">
-        <div class="info">
-          <h3 class="name_item">YZF-R15</h3>
-          <img src="asset/img/motors/mt4.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="contact.html" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box5-->
-      <div class="box element_all" data-item="Yamaha">
-        <div class="info">
-          <h3 class="name_item">TÉNÉRE 700</h3>
-          <img src="asset/img/motors/mt5.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="contact.html" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box6-->
-      <div class="box element_all" data-item="Yamaha">
-        <div class="info">
-          <h3 class="name_item">TRACER-9</h3>
-          <img src="asset/img/motors/mt6.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="#" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box7-->
-      <div class="box element_all" data-item="Ducati">
-        <div class="info">
-          <h3 class="name_item">Hypermotard 950</h3>
-          <img src="asset/img/motors/mt7.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="#" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box8-->
-      <div class="box element_all" data-item="Ducati">
-        <div class="info">
-          <h3 class="name_item">Scrambler Sixty2</h3>
-          <img src="asset/img/motors/mt8.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="#" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box9-->
-      <div class="box element_all" data-item="Ducati">
-        <div class="info">
-          <h3 class="name_item">Ducati Monster</h3>
-          <img src="asset/img/motors/mt9.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="#" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box10-->
-      <div class="box element_all" data-item="Ducati">
-        <div class="info">
-          <h3 class="name_item">Ducati MultiStrada</h3>
-          <img src="asset/img/motors/mt10.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="#" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box11-->
-      <div class="box element_all" data-item="Ducati">
-        <div class="info">
-          <h3 class="name_item">Scrambler Cafe Racer</h3>
-          <img src="asset/img/motors/mt11.jpg" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="#" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-      <!--Box12-->
-      <div class="box element_all" data-item="Ducati">
-        <div class="info">
-          <h3 class="name_item">Ducati Hypermotard</h3>
-          <img src="asset/img/motors/mt12.webp" alt="">
-          <span>$192.634</span>
-          <i class='bx bxs-star'><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>(17k
-            Reviews)</i>
-          <a href="#" class="btn">Contact</a>
-          <a href="#" class="details">View Details</a>
-        </div>
-      </div>
-    </div>
+            <!-- Toggle button for mobile -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
 
-    <div id="pagination-controls" class="pagination"></div>
-  </section>
-  <footer class="footer">
-    <div class="footer-container container">
-      <div class="footer-box">
-        <a href="" class="logo" style="padding-top: 13px;">Auto<span>World</span></a>
-        <div class="social">
-          <a href=""><i class='bx bxl-facebook'></i></a>
-          <a href=""><i class='bx bxl-twitter'></i></a>
-          <a href=""><i class='bx bxl-instagram'></i></a>
-          <a href=""><i class='bx bxl-youtube'></i></a>
-        </div>
-      </div>
-      <div class="footer-box">
-        <h3>Page</h3>
-        <a href="HomePage.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="Porsche.html">Cars</a>
-        <a href="motors.html">Motors</a>
-      </div>
-      <div class="footer-box">
-        <h3>Legal</h3>
-        <a href="">Privacy</a>
-        <a href="">Refund Policy</a>
-        <a href="">Cookie Policy</a>
-      </div>
-      <div class="footer-box">
-        <h3>Contact</h3>
-        <p>United States</p>
-        <p>Japan</p>
-        <p>Germany</p>
-      </div>
-      <div class="footer-box">
-        <h3>Address</h3>
-        <p>Showroom 1: 594 Duong Lang, Dong Da, Ha Noi</p>
-        <div style="width:200px;height:50px;">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
-    1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
-    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
-    1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
-    5e0!3m2!1svi!2sus!4v1501056274257" width="300" height="50" frameborder="0" style="border:0"
-            allowfullscreen></iframe>
-        </div>
-        <p>Showroom 2: Nam Ky Khoi Nghia</p>
-        <div style="width:200px;height:50px;">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
-    1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
-    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
-    1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
-    5e0!3m2!1svi!2sus!4v1501056274257" width="300" height="50" frameborder="0" style="border:0"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--Copyright-->
-  <script src="asset/js/main.js"></script>
-  <script src="asset/js/paginationSearch.js"></script>
+    <main class="main">
+        <!-- Car Showcase Section -->
+        <section class="cars section" id="cars">
+            <h2 class="section__title">Dòng Xe Nổi Bật</h2>
 
+            <div class="cars__filter container">
+                <button class="filter__item active-filter" data-filter="all">Tất cả</button>
+                <button class="filter__item" data-filter="sedan">Sedan</button>
+                <button class="filter__item" data-filter="suv">SUV</button>
+                <button class="filter__item" data-filter="electric">Xe điện</button>
+                <button class="filter__item" data-filter="sport">Thể thao</button>
+            </div>
+
+            <div class="cars__container container grid">
+                <!-- Car Card 1 -->
+                <div class="car__card" data-category="sedan">
+                    <div class="car__tag">Mới</div>
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Sedan" alt="Sedan" class="car__img">
+                    <h3 class="car__title">Nova Sedan S-Class</h3>
+                    <p class="car__price">Từ 1.2 Tỷ VNĐ</p>
+                    <a href="pdetail.html" class="button car__button">Chi tiết</a>
+                </div>
+                <!-- Car Card 2 -->
+                <div class="car__card" data-category="suv">
+                    <div class="car__tag car__tag--hybrid">Hybrid</div>
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+SUV" alt="SUV" class="car__img">
+                    <h3 class="car__title">Nova SUV X-Plorer</h3>
+                    <p class="car__price">Từ 1.8 Tỷ VNĐ</p>
+                    <a href="pdetail.html" class="button car__button">Chi tiết</a>
+                </div>
+                <!-- Car Card 3 -->
+                <div class="car__card" data-category="electric">
+                    <div class="car__tag car__tag--sale">Giảm 5%</div>
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+EV" alt="Electric Car" class="car__img">
+                    <h3 class="car__title">Nova EV-Tron</h3>
+                    <p class="car__price">Từ 2.1 Tỷ VNĐ</p>
+                    <a href="pdetail.html" class="button car__button">Chi tiết</a>
+                </div>
+                <!-- Car Card 4 -->
+                <div class="car__card" data-category="sport">
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Sport" alt="Sports Car" class="car__img">
+                    <h3 class="car__title">Nova Sport GT</h3>
+                    <p class="car__price">Từ 3.5 Tỷ VNĐ</p>
+                    <a href="pdetail.html" class="button car__button">Chi tiết</a>
+                </div>
+                 <!-- Car Card 5 -->
+                <div class="car__card" data-category="sedan">
+                    <div class="car__tag">Mới</div>
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Hatchback" alt="Hatchback" class="car__img">
+                    <h3 class="car__title">Nova Hatchback Z-Line</h3>
+                    <p class="car__price">Từ 890 Triệu VNĐ</p>
+                    <a href="pdetail.html" class="button car__button">Chi tiết</a>
+                </div>
+                <!-- Car Card 6 -->
+                <div class="car__card" data-category="suv">
+                    <img src="https://via.placeholder.com/400x300.png/0a2a43/ffffff?text=Nova+Pickup" alt="Pickup Truck" class="car__img">
+                    <h3 class="car__title">Nova Pickup Titan</h3>
+                    <p class="car__price">Từ 950 Triệu VNĐ</p>
+                    <a href="pdetail.html" class="button car__button">Chi tiết</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">NovaCars</a>
+                    <p class="footer__description">Mang đến những sản phẩm chất lượng và trải nghiệm vượt trội.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social-link"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social-link"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h3 class="footer__title">Về NovaCars</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Câu chuyện</a></li>
+                        <li><a href="#" class="footer__link">Sự nghiệp</a></li>
+                        <li><a href="#" class="footer__link">Tin tức</a></li>
+                    </ul>
+                </div>
+                 <div class="footer__links">
+                    <h3 class="footer__title">Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="footer__link">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="footer__link">Điều khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="footer__copy">&#169; NovaCars. All rights reserved</span>
+        </div>
+    </footer>
+
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/motors.js"></script>
 </body>
-
 </html>
